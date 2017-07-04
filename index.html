@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JavaScript & JSON</title>
-<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-<script src="relocate.js"></script>
-<script src="submit.js"></script>
+    <title>JavaScript & JSON</title>
+    <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <script src="relocate.js"></script>
+    <script src="submit.js"></script>
 </head>
 <body>
 <h1>Ej.: Relocate (sin $_GET), sino con Submit ($_POST)</h1>
 <section id="contenido">
-    <button type=button  onClick="submitInsert();" title="Insertar...">
-        Agregar Registro <img src="add.png" align='absmiddle' border="0" > 
+    <button type="button" onClick="submitInsert();" title="Insertar...">
+        Agregar Registro <img src="add.png" align="absmiddle" border="0">
     </button>
-    <table width="100%" border=1 align="center">
-        <thead><tr><th>Registro</th><th>Descripción</th><th>Acción</th></tr></thead>
+    <table width="100%" border="1" align="center">
+        <thead><tr><th>Registro</th><th>Descripción</th><th>Acciones</th></tr></thead>
         <tbody>
             <tr>
                 <td>Registro 1</td><td>Descripcion A</td>
                 <td align="center" style="cursor:pointer;">
-                    <a onclick="submitEdit( 1, 'Registro 1', 'Descripcion A' );">
+                    <a onClick="submitEdit( 1, 'Registro 1', 'Descripcion A' );">
                         <img src="edit.png" title="Editar..."/>
                     </a>
-                    <a onclick="submitDelete( 1 );"><img src="cross.png" title="Eliminar..."/></a>
+                    <a onClick="submitDelete( 1 );"><img src="cross.png" title="Eliminar..."/></a>
                 </td>
             </tr>
             <tr>
                 <td>Registro 2</td><td>Descripcion B</td>
                 <td align="center" style="cursor:pointer;">
-                    <a onclick="submitEdit( 2, 'Registro 2', 'Descripcion B' );">
+                    <a onClick="submitEdit( 2, 'Registro 2', 'Descripcion B' );">
                         <img src="edit.png" title="Editar..."/>
                     </a>
-                    <a onclick="submitDelete( 2 );"><img src="cross.png" title="Eliminar..."/></a>
+                    <a onClick="submitDelete( 2 );"><img src="cross.png" title="Eliminar..."/></a>
                 </td>
             </tr>
             <tr>
                 <td>Registro 3</td><td>Descripcion C</td>
                 <td align="center" style="cursor:pointer;" title="Editar...">
-                    <a onclick="submitEdit( 3, 'Registro 3', 'Descripcion C' );">
+                    <a onClick="submitEdit( 3, 'Registro 3', 'Descripcion C' );">
                         <img src="edit.png" title="Editar..."/>
                     </a>
-                    <a onclick="submitDelete( 3 );"><img src="cross.png" title="Eliminar..."/></a>
+                    <a onClick="submitDelete( 3 );"><img src="cross.png" title="Eliminar..."/></a>
                 </td>
             </tr>
         </tbody>
